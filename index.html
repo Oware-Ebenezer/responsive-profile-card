@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile card | Stage 0</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- External Link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <article data-testid="test-profile-card" class="profile-card-container">
+      <main class="profile-left">
+        <header class="profile-header">
+          <img
+            src="https://avatars.githubusercontent.com/u/181800897?v=4"
+            alt="avatar"
+            class="avatar"
+            data-testid="test-user-avatar"
+          />
+          <h1 class="name" data-testid="test-user-name">
+            Ebenezer Oware Kwabena
+          </h1>
+        </header>
+        <section class="profile-info">
+          <p class="bio" data-testid="test-user-bio">
+            A passionate Graphic Designer/Frontend Developer as well as a
+            Computer Science student. I love building web interfaces, solving
+            coding challenges, and crafting clean UI.
+          </p>
+          <p class="time-stamp" data-testid="test-user-time"></p>
+        </section>
+      </main>
+
+      <main class="profile-right">
+        <section class="profile-social-links">
+          <h2>Get in touch</h2>
+          <ul data-testid="test-user-social-links">
+            <li>
+              <i class="fa-brands fa-github"></i>
+              <a
+                href="https://github.com/Oware-Ebenezer"
+                target="_blank"
+                rel="noopener"
+                data-testid="test-user-social-github"
+                >Github</a
+              >
+            </li>
+            <li>
+              <i class="fa-brands fa-instagram"></i>
+              <a
+                href="https://www.instagram.com/offi_cialnanak?igsh=ajI3bmNmZTVscW9n"
+                target="_blank"
+                rel="noopener"
+                data-testid="test-user-social-instagram"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <i class="fa-brands fa-tiktok"></i>
+              <a
+                href="http://tiktok.com/@nana_k_graphics"
+                target="_blank"
+                rel="noopener"
+                data-testid="test-user-social-tiktok"
+                >TikTok</a
+              >
+            </li>
+          </ul>
+        </section>
+
+        <section class="hobbies">
+          <h2>Hobbies</h2>
+          <ul data-testid="test-user-hobbies">
+            <li>Programming/Coding</li>
+            <li>Preaching</li>
+            <li>Designing</li>
+            <li>Teamwork and collaboration</li>
+          </ul>
+        </section>
+        <section class="dislikes">
+          <h2>Dislikes</h2>
+          <ul data-testid="test-user-dislikes">
+            <li>Laziness</li>
+            <li>Procrastination</li>
+            <li>Dishonesty</li>
+            <li>Late Submission with prior notification</li>
+          </ul>
+        </section>
+      </main>
+    </article>
+    <script src="script.js"></script>
+  </body>
+</html>
