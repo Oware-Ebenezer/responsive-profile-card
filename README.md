@@ -14,3 +14,6 @@ Fully responsive layout for **Mobile**, **Tablet** , and **Desktop**
 | style.css     # Styling and responsive layout
 | script.js     # Dynamic timestamp & image upload logic
 | README.md     # Documentation
+
+## Live Demo
+Link: https://oware-ebenezer.github.io/responsive-profile-card/
