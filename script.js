@@ -1,11 +1,12 @@
 function updateTime() {
   const timeStamp = document.querySelector('[data-testid = "test-user-time"]');
   if (timeStamp) {
-    const now = new Date();
-    const hr = String(now.getHours()).padStart(2, "0");
-    const mins = String(now.getMinutes()).padStart(2, "0");
-    const sec = String(now.getSeconds()).padStart(2, "0");
-    timeStamp.textContent = `${hr}: ${mins}: ${sec} ms`;
+    // const now = new Date();
+    // const hr = String(now.getHours()).padStart(2, "0");
+    // const mins = String(now.getMinutes()).padStart(2, "0");
+    // const sec = String(now.getSeconds()).padStart(2, "0");
+    // timeStamp.textContent = `${hr}: ${mins}: ${sec} ms`;
+    timeStamp.textContent = `${Date.now()}ms`;
   }
 }
 
@@ -26,4 +27,3 @@ avatar.addEventListener("click", () => {
   };
   input.click();
 });
-    
