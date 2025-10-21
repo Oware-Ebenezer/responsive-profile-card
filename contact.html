@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main id="contact-us">
@@ -42,7 +49,8 @@
           </section>
           <section>
             <label for="contact-message">Message</label>
-            <textarea rows="5"
+            <textarea
+              rows="5"
               data-testid="test-contact-message"
               aria-describedby="test-contact-error-message"
               id="contact-message"
@@ -56,11 +64,11 @@
           >
             Submit
           </button>
-          <div class="toastSuccess" data-testid="test-contact-success">
-            successfully
-          </div>
         </form>
       </section>
+      <p class="toastSuccess" id="toast" data-testid="test-contact-success">
+        successfully
+      </p>
     </main>
   </body>
 </html>

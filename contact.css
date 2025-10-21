@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sora", sans-serif;
+}
+
+:root {
+  --primary-color: #f8633e;
+  --secondary-color: #093375;
+  --social-links: #ff3f7f;
+  --bg-color: #08867c;
+  --border-circle: #ff0040bb;
+  --profile-card-bg: #ffffff;
+  --profile-name-color: #000000;
+  --profile-bio-color: #475569;
+}
+body {
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1.5rem;
+}
+
+main {
+  min-width: 50%;
+  background-color: var(--profile-card-bg);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+label {
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 3rem 0;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--primary-color);
+}
+button {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e6552c;
+}
+.error {
+  color: red;
+  font-size: 0.9rem;
+}
+
+h2 {
+  border-bottom: 2px solid #ff0015;
+  padding-bottom: 0.3rem;
+}
+
+.toastSuccess {
+  position: fixed;
+  top: 30px;
+  right: -300px;
+  background-color: #2ecc71;
+  padding: 15px 30px;
+  border-radius: 5px;
+  color: #fff;
+  opacity: 0;
+  transition: all 0.5s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.toastSuccess.show {
+  right: 20px;
+  opacity: 1;
+}
