@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <main id="contact-us">
+      <section>
+        <h2>Contact us</h2>
+        <form id="contact-form">
+          <section>
+            <label for="contact-name">Full Name</label>
+            <input
+              type="text"
+              data-testid="test-contact-name"
+              aria-describedby="test-contact-error-name"
+              id="contact-name"
+            />
+            <p class="error" id="test-contact-error-name"></p>
+          </section>
+          <section>
+            <label for="contact-email">Email</label>
+            <input
+              type="email"
+              data-testid="test-contact-email"
+              aria-describedby="test-contact-error-email"
+              id="contact-email"
+            />
+            <p class="error" id="test-contact-error-email"></p>
+          </section>
+          <section>
+            <label for="contact-subject">Subject</label>
+            <input
+              type="text"
+              data-testid="test-contact-subject"
+              aria-describedby="test-contact-error-subject"
+              id="contact-subject"
+            />
+            <p class="error" id="test-contact-error-subject"></p>
+          </section>
+          <section>
+            <label for="contact-message">Message</label>
+            <textarea rows="5"
+              data-testid="test-contact-message"
+              aria-describedby="test-contact-error-message"
+              id="contact-message"
+            ></textarea>
+            <p class="error" id="test-contact-error-message"></p>
+          </section>
+          <button
+            type="submit"
+            class="submitBtn"
+            data-testid="test-contact-submit"
+          >
+            Submit
+          </button>
+          <div class="toastSuccess" data-testid="test-contact-success">
+            successfully
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
