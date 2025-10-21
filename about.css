@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sora", sans-serif;
+}
+
+:root {
+  --primary-color: #f8633e;
+  --secondary-color: #093375;
+  --social-links: #ff3f7f;
+  --bg-color: #08867c;
+  --border-circle: #ff0040bb;
+  --profile-card-bg: #ffffff;
+  --profile-name-color: #000000;
+  --profile-bio-color: #475569;
+}
+body {
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1.5rem;
+}
+
+main {
+  max-width: 800px;
+  background-color: var(--profile-card-bg);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 1.95rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid var(--primary-color);
+  border-radius: 10px;
+}
+
+h3 {
+  color: var(--secondary-color);
+  margin: 1rem;
+  background-color: #458bfc44;
+  width: fit-content;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+}
+
+section {
+  margin-bottom: 1.5rem;
+  padding: 0.5rem;
+}
+
+p {
+  color: var(--profile-bio-color);
+  line-height: 1.6;
+  margin-top: 0.5rem;
+  text-align: justify;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  main {
+    padding: 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+
+  p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  ul li {
+    font-size: 0.9rem;
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 0.8rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  h3 {
+    font-size: 0.95rem;
+  }
+
+  p,
+  li {
+    font-size: 0.85rem;
+  }
+}
